@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right top, rgb(255, 250, 160), rgb(252, 245, 95));
+  font-family: 'Roboto', 'serif';
+}
+
+header {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  min-width: 100%;
+  text-align: center;
+  font-weight: 600;
+  padding: 1rem;
+  position: static;
+}
+
+footer span {
+  padding-left: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}

@@ -1,0 +1,78 @@
+form {
+    max-width: 600px;
+    padding: 2rem;
+    text-align: center;
+    background-color: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 1rem;
+}
+
+fieldset {
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+legend {
+    font-size: 1.5rem;
+    padding: 0.25rem;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.1rem;
+    width: fit-content;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.form-control {
+    padding-bottom: 1rem;
+}
+
+
+.error {
+    position: relative;
+    color:red;
+    padding-top: 0.1rem;
+}
+
+.submit-button {
+    margin-top: 1.5rem;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 5px;
+    box-shadow: 10px;
+    background: linear-gradient(to right top, rgb(255, 250, 160), rgb(252, 245, 95));
+    font-weight: 600;
+}
+
+.contract {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: pink;
+}
+
+.contract-address {
+    font-weight: 600;
+}
+
+.contract p {
+    margin-top: 0.5rem;
+}
+
+
+.copy-btn {
+    font-size: larger;
+    margin-left: 0.5rem;
+}
+
+.copied-btn {
+    font-size: larger;
+    margin-left: 0.5rem;
+}
