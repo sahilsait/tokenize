@@ -54,9 +54,10 @@ input {
 
 .contract {
     margin: 0.5rem;
+    margin-top: 2rem;
     padding: 0.5rem;
     text-align: center;
-    background-color: pink;
+    background: linear-gradient(to right top, rgb(255, 250, 160), rgb(252, 245, 95));
 }
 
 .contract-address {
