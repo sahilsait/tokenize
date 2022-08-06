@@ -6,6 +6,6 @@ To get it running on your local machine, clone this repo and run the following c
 
 ```shell
 npm install
-#paste the .env file in the root directory
+# paste the .env file in the root directory
 npm run dev
 ```
