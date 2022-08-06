@@ -1,8 +1,8 @@
-import "./TokenForm.css";
-import { useEffect, useState } from "react";
+import "../static/styles/TokenForm.css";
+import { useState } from "react";
 import { useFormik } from "formik";
 import { ethers } from "ethers";
-import Token from "./artifacts/contracts/Token.sol/Token.json";
+import Token from "../artifacts/contracts/Token.sol/Token.json";
 import { CopyToClipboard } from "react-copy-to-clipboard/lib/Component";
 
 const initialValues = {
@@ -65,8 +65,9 @@ const TokenForm = () => {
   };
 
   const formik = useFormik({
+    enableReinitialize: true,
     initialValues,
-    onSubmit: async (values, actions) => {
+    onSubmit: async (values) => {
       console.log("Values:", values);
       await deployToken(
         values.name,

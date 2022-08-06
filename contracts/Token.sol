@@ -5,16 +5,19 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "hardhat/console.sol";
 
 contract Token is ERC20 {
+    uint8 decimals_;
+
     constructor(
         string memory name,
         string memory symbol,
         uint256 totalSupply,
-        uint8 decimals
+        uint8 decimal
     ) ERC20(name, symbol) {
-        _mint(msg.sender, totalSupply * 10**decimals);
-        console.log(
-            "Deploying token contract and transferring totalSupply to address:",
-            msg.sender
-        );
+        _mint(msg.sender, totalSupply * 10**decimal);
+        decimals_ = decimal;
+    }
+
+    function decimals() public view virtual override returns (uint8) {
+        return decimals_;
     }
 }

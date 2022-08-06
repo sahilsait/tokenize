@@ -1,9 +1,10 @@
 form {
     max-width: 600px;
     padding: 2rem;
+    margin: 1rem;
     text-align: center;
     background-color: white;
-    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    background: linear-gradient(to right top, rgb(255, 250, 160), rgb(252, 245, 95));
     border-radius: 1rem;
 }
 
